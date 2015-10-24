@@ -1,4 +1,9 @@
 jQuery(document).ready(function($){
+	
+	//NAVIGATIO MENU
+	
+	
+	
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 

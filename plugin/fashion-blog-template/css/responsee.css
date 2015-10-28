@@ -58,8 +58,8 @@ td {border-right:1px solid #e0e0e0;}
 }
 .size-1140 .line {
   margin:0 auto;
-  max-width:71.25em;
-  padding:0 0.625em;
+  max-width:100%;
+  /*padding:0 0.625em;*/
 }
 .size-960.align-content-left .line,.size-1140.align-content-left .line {margin-left:0;}
 form {line-height:1.4em;}
@@ -79,7 +79,7 @@ nav {
 .top-nav ul {padding:0;}
 .top-nav ul ul {
   position:absolute;
-  background:#262626;
+  background:#FFFFFF;
 }
 .top-nav li {
   float:left;
@@ -92,11 +92,12 @@ nav {
   color:#fff; 
 }
 .top-nav li ul li a {
-  background:none repeat scroll 0 0 #222;
   min-width:100%;
   padding:0.625em;
 }
-.top-nav li a:hover, .aside-nav li a:hover {background:#999;}
+.top-nav li a:hover, .aside-nav li a:hover {
+	background-color: transparent;
+	}
 .top-nav li ul {display:none;}
 .top-nav li ul li {
   float:none;
@@ -132,9 +133,11 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.7em;
   margin:0 0.625em;
 }
-.top-nav .active-item a {background:none repeat scroll 0 0 #999;}
+.top-nav .active-item a {
+	letter-spacing:5px;
+}
 .aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
-  background:none repeat scroll 0 0 #999;
+  background-color: transparent;
   color:#fff;
 } 
 @media screen and (min-width:801px) {
@@ -172,7 +175,6 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 }
 .aside-nav li a {
   display:block;
-  padding:1.25em;
   border-bottom:1px solid #d2d2d2; 
 }
 .aside-nav > ul > li:last-child a {border-bottom:0 none;}
@@ -214,7 +216,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   list-style:none outside none;
   padding:10px;
 }
-.margin {margin:0 -0.625em;}
+.margin {margin:0 -0;}
 .line {clear:left;}
 .line .line {padding:0;}
 .hide-l {display:none;}
@@ -243,7 +245,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .s-11 {width:90%;}
 .s-12 {width:100%;}
 .margin > .s-1,.margin > .s-2,.margin > .s-five,.margin > .s-3,.margin > .s-4,.margin > .s-5,.margin > .s-6,.margin > .s-7,.margin > .s-8,.margin > .s-9,.margin > .s-10,.margin > .s-11,.margin > .s-12,
-.margin > .l-1,.margin > .l-2,.margin > .l-five,.margin > .l-3,.margin > .l-4,.margin > .l-5,.margin > .l-6,.margin > .l-7,.margin > .l-8,.margin > .l-9,.margin > .l-10,.margin > .l-11,.margin > .l-12 {padding:0 0.625em;}
+.margin > .l-1,.margin > .l-2,.margin > .l-five,.margin > .l-3,.margin > .l-4,.margin > .l-5,.margin > .l-6,.margin > .l-7,.margin > .l-8,.margin > .l-9,.margin > .l-10,.margin > .l-11,.margin > .l-12 {padding:0 0.125em;}
 .margin > .s-1 {width:8.3333%;}
 .margin > .s-2 {width:16.6666%;}
 .margin > .s-five {width:20%;}
@@ -283,7 +285,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .margin > .l-10 {width:83.3333%;}
 .margin > .l-11 {width:90%;}
 .margin > .l-12 {width:100%;}
-.right {float:right;} 
+.right {float:left;} 
 @media screen and (max-width:800px) {
 .size-960 {max-width:800px;}
 .size-1140 {max-width:800px;}

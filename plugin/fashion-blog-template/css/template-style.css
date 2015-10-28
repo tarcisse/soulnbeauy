@@ -1,11 +1,12 @@
 body {
-	background: none repeat scroll 0 0 #0b192f;
+	background: none repeat scroll 0 0 #dedede;
 	color: #fff;
 	font-family: roboto;
 	font-weight: 300;
 }
 nav {
-	background: none repeat scroll 0 0 #162b4d;
+	height:auto;
+	background: none repeat scroll 0 0 #000;
 	position: relative;
 }
 a.logo {
@@ -13,33 +14,39 @@ a.logo {
 	display: inline-block;
 	font-size: 2.3em;
 	font-weight: 100;
-	letter-spacing: -1px;
+	letter-spacing: 10px;
 	padding: 0.6em;
 }
 a.logo span {
-	color: #d12767;
+	color: #FFF;
 }
 header h1 {
-	color: #637693;
+	color: #FFF;
 	display: inline;
 	font-size: 1em;
 	font-weight: 300;
 	margin: 0;
 	position: relative;
 	top: -0.35em;
+	letter-spacing: 5px;
+}
+#nav-container{
+	height:70px;
+	background: white;
+	color:#000;
 }
 .top-nav li a {
 	font-size: 1.1em;
-	padding: 2em 1.25em;
+	color:#000;
 }
 .top-nav li a:hover {
-	background: none repeat scroll 0 0 #283D5F;
+	opacity:0.6;
 }
 .top-nav .active-item a, .top-nav .active-item a:hover {
-	background: none repeat scroll 0 0 #0b192f;
+	opacity:0.5;
 }
 .social {
-	padding: 1.6em;
+	
 }
 .social i {
 	color: #637693;
@@ -156,7 +163,7 @@ aside p {
 	background: none repeat scroll 0 0 #fff;
 }
 footer {
-	background: none repeat scroll 0 0 #162b4d;
+	background: none repeat scroll 0 0 #000;
 	display: inline-block;
 	margin-bottom: 0;
 	margin-top: 1.25em;
@@ -165,7 +172,7 @@ footer {
 	width: 100%;
 }
 footer p, footer a, footer a:link, footer a:active, footer a:visited {
-	color: #637693;
+	color: #FFFFFF;
 	font-size: 0.9em;
 }
 #article-section article {

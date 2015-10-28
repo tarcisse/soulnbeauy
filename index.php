@@ -94,7 +94,7 @@ $app->get('/', function(Application $app , Request $req) {
        }
     
   //return print_r($page);
-    return $app['twig']->render('index.html',array('page'=>$page));
+    return $app['twig']->render('web/pages/index.html',array('page'=>$page));
 });
  
  /*
@@ -107,7 +107,7 @@ $app->get('/', function(Application $app , Request $req) {
     $page['description']='';
     $page['key']='';
     
-    return $app['twig']->render('photo.html',array('page'=>$page));
+    return $app['twig']->render('web/pages/photos.html',array('page'=>$page));
 });
  /*
   *videos
@@ -119,7 +119,7 @@ $app->get('/', function(Application $app , Request $req) {
     $page['description']='';
     $page['key']='';
     
-    return $app['twig']->render('video.html',array('page'=>$page));
+    return $app['twig']->render('web/pages/videos.html',array('page'=>$page));
 });
  
 // On lance l'application

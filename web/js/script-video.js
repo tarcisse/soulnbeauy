@@ -1,33 +1,3 @@
-//slideshow background setting
-jQuery(function ($) {
-
-    $.supersized({
-
-        // Functionality
-        slide_interval: 7000, // Length between transitions
-        transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-        transition_speed: 600, // Speed of transition
-
-        // Components							
-        slide_links: 'false', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
-        slides: [ // Slideshow Images
-            {
-                image: 'images/slider1.jpg',
-                title: ' <h2>Love & Passionate <br> for What We Do</h2>'
-            }, {
-                image: 'images/slider2.jpg',
-                title: ' <h2>Design Wise <br> Simple & Amazing</h2>'
-            }, {
-                image: 'images/slider3.jpg',
-                title: '<h2>Integrity & Loyal <br> for Customer</h2>'
-            }, {
-                image: 'images/slider4.jpg',
-                title: '<h2>Bunch of Creative <br> People & Idea</h2>'
-            }
-        ]
-
-    });
-});
 
 //sticky navigation
 $(document).ready(function () {
@@ -104,7 +74,7 @@ $(document).ready(function () {
         }
 
         function showNewContent() {
-            $.getScript("js/portfolio.js");
+            $.getScript("web/js/portfolio.js");
             $('.worksajax').slideDown('slow');
 
         }
@@ -149,7 +119,7 @@ $(document).ready(function () {
         }
 
         function showNewContent() {
-            $.getScript("js/team.js");
+            $.getScript("web/js/team.js");
             $('.teamajax').slideDown('slow');
 
         }
@@ -196,7 +166,7 @@ $(window).bind("load", function () {
                 var self = this;
                 self.addMarker({
                     'position': this.get('map').getCenter(),
-					icon: 'images/office-building.png',
+					icon: 'web/images/office-building.png',
                 }).click(function () {
                     self.openInfoWindow({
                         'content': 'Visit Us <br> Address: 11231 Buah Batu Bandung <br> Phone: 1233-2324-2324 <br>Email: company-email@email.com'
@@ -233,4 +203,11 @@ $(document).ready(function () {
     })
 });
 
-
+//video background setting  
+var BV = new $.BigVideo();
+BV.init();
+if (Modernizr.touch) {
+    BV.show('web/images/slider1.jpg');
+} else {
+    BV.show('web/videos/brittany.mp4',{ambient:true});
+}

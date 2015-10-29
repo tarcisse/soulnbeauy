@@ -53,6 +53,7 @@ $app['translator'] = $app->share($app->extend('translator', function($translator
 ////----------------------------variable global------------------
 $page=array();
 $page['titre']='';
+$page['sous_titre']='';
 $page['description']='';
 $page['key']='';
 $page["soulnbeauty"] = $soulnbeauty;
@@ -90,7 +91,8 @@ $app->get('/', function(Application $app , Request $req) {
   */
  $app->get('/photo', function(Application $app) {
     global $page;
-    $page['titre']='PHOTOS';
+    $page['titre']='BOOK | SOUL & BEAUTY';
+	$page['sous_titre']='Book';
     $page['description']='';
     $page['key']='';
     
@@ -117,7 +119,8 @@ $app->get('/', function(Application $app , Request $req) {
     global $page;
 	$page["article"] = "accueil";
 	
-    $page['titre']='BLOG';
+    $page['titre']='BLOG | Soul & Beauty';
+	$page['sous_titre']='BLOG';
     $page['description']='';
     $page['key']='';
     

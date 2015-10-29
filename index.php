@@ -2,22 +2,8 @@
 
 //die($_SERVER['REMOTE_ADDR']);
 
+include "soulnbeauty.php";
 
-if(isset($_GET['vendre']))
-{
-   if($_GET['vendre']=='du reve')
-   {
-    
-   }
-   else{
-    header('location:http://soulnbeauty.be/progress/index.html');
-   }
-}
-else
-{
-     //die("authentication failed  your ip is:".$_SERVER['REMOTE_ADDR']);
-     header('location:http://soulnbeauty.be/progress/index.html');
-}
 // On charge le framework Silex
 require_once 'vendor/autoload.php';
 use Symfony\Component\HttpFoundation\Request;
@@ -69,6 +55,7 @@ $page=array();
 $page['titre']='';
 $page['description']='';
 $page['key']='';
+$page["soulnbeauty"] = $soulnbeauty;
 
 
 /*
@@ -120,6 +107,21 @@ $app->get('/', function(Application $app , Request $req) {
     $page['key']='';
     
     return $app['twig']->render('web/pages/videos.html',array('page'=>$page));
+});
+
+/*
+  *blog
+  *
+  */
+ $app->get('/blog', function(Application $app, Request $req) {
+    global $page;
+	$page["article"] = "accueil";
+	
+    $page['titre']='BLOG';
+    $page['description']='';
+    $page['key']='';
+    
+    return $app['twig']->render('web/pages/blog.html',array('page'=>$page));
 });
  
 // On lance l'application

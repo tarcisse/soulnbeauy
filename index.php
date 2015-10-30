@@ -86,10 +86,10 @@ $app->get('/', function(Application $app , Request $req) {
 });
  
  /*
-  *photo url
+  *Books
   *
   */
- $app->get('/photo', function(Application $app) {
+ $app->get('/books', function(Application $app) {
     global $page;
     $page['titre']='BOOK | SOUL & BEAUTY';
 	$page['sous_titre']='Book';
@@ -102,9 +102,10 @@ $app->get('/', function(Application $app , Request $req) {
   *videos
   *
   */
- $app->get('/video', function(Application $app) {
+ $app->get('/videos', function(Application $app) {
     global $page;
-    $page['titre']='VIDEOS';
+    $page['titre']='VIDEOS | SOUL & BEAUTY';
+	$page['sous_titre']='Videos';
     $page['description']='';
     $page['key']='';
     
@@ -120,7 +121,7 @@ $app->get('/', function(Application $app , Request $req) {
 	$page["article"] = "accueil";
 	
     $page['titre']='BLOG | Soul & Beauty';
-	$page['sous_titre']='BLOG';
+	$page['sous_titre']='Blog';
     $page['description']='';
     $page['key']='';
     

@@ -2,7 +2,7 @@
 
 //die($_SERVER['REMOTE_ADDR']);
 
-include "soulnbeauty.php";
+//include "soulnbeauty.php";
 
 // On charge le framework Silex
 require_once 'vendor/autoload.php';
@@ -56,7 +56,7 @@ $page['titre']='';
 $page['sous_titre']='';
 $page['description']='';
 $page['key']='';
-$page["soulnbeauty"] = $soulnbeauty;
+//$page["soulnbeauty"] = $soulnbeauty;
 
 
 /*

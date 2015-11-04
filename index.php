@@ -144,6 +144,22 @@ $app->get('/', function(Application $app , Request $req) {
     return $app['twig']->render('web/pages/agenda.html',array('page'=>$page));
 });
  
+/*
+  *Agency
+  *
+  */
+ $app->get('/agency', function(Application $app, Request $req) {
+    global $page;
+	$page["article"] = "accueil";
+	
+    $page['titre']='AGENCY | Soul & Beauty';
+	$page['sous_titre']='Agency';
+    $page['description']='';
+    $page['key']='';
+    
+    return $app['twig']->render('web/pages/agency.html',array('page'=>$page));
+});
+ 
 // On lance l'application
 $app->run();
 

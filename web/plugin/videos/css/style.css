@@ -16,7 +16,7 @@
 }
 
 #plugin-video{
-	padding-bottom:40px;
+	/*padding-bottom:40px;*/
 }
 
 h1 {
@@ -51,7 +51,7 @@ a.button:hover {
 .grid {
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 3em 0 0 0;
+	/*padding: 3em 0 0 0;*/
 	width: 100%;
 	max-width: 1200px;
 	list-style: none;

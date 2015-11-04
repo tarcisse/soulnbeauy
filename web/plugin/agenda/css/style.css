@@ -1,75 +1,3 @@
-/*cmunorm.otf*/
-@font-face {
-	font-family: 'cmunorm';
-	src: url('../fonts/cmunorm.otf'); 
-	font-weight: bold;
-}
-
-/*helba-logo*/
-@font-face {
-	font-family: 'helba';
-	src: url('../fonts/helbaxlightdbnormal.ttf'); 
-	font-weight: bold;
-}
-/*Regular version*/
-@font-face {
-font-family: 'AbadiMT';
-src: url('../fonts/Abadi%20MT%20Condensed%20Light.ttf');
-}
-/*bold version*/
-@font-face {
-	font-family: 'AbadiMTBold';
-	src: url('../fonts/AbadiBold.ttf'); 
-	font-weight: bold;
-}
-@font-face {
-font-family: 'MinionPro_r';
-src: url("../fonts/MinionPro-Regular.otf");
-}
-/*bold version*/
-@font-face {
-	font-family: 'MinionPro_s';
-	src: url('../fonts/MinionPro-Semibold.otf'); 
-	font-weight: bold;
-}
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 100%;
-  color: #7f8c97;
- background-color:white !important;
-}
-
-a {
-  color: #acb7c0;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	font-family: 'cmunorm', sans-serif;
-	color: #444;
-}
-
 /* --------------------------------
 Navigation
 ---------------------------------- */
@@ -85,6 +13,7 @@ Modules - reusable parts of our design
   max-width: 1170px;
   margin: 0 auto;
   background-color:transparent;
+  color:#000;
 }
 .cd-container::after {
   /* clearfix */
@@ -98,7 +27,7 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-header {
+header-timeline {
   height: 200px;
   line-height: 200px;
   text-align: center;
@@ -107,18 +36,18 @@ header {
   background-repeat:no-repeat;
   background-size: cover;
 }
-header h1 {
+header-timeline h1 {
   color: white;
   font-size: 18px;
   font-family: 'helba';
   font-size: 4.125rem;
 }
 @media only screen and (min-width: 1170px) {
-  header {
+  header-timeline {
     height: 500px;
     line-height: 300px;
   }
-  header h1 {
+  header-timeline h1 {
     font-size: 24px;
     font-size: 12.5rem;
   }
@@ -523,4 +452,10 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+@media only screen and (max-width: 1169px) {
+  .cd-timeline-block {
+  	background-image:none !important;
+   }
 }

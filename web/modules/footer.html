@@ -53,9 +53,15 @@
     <script type="text/javascript" src="web/js/ticker.js"></script>
     <script type="text/javascript" src="web/js/jquery.easing.js"></script>
     <script type="text/javascript" src="web/js/jquery.BlackAndWhite.min.js"></script>
+    <script src="web/plugin/agenda/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="web/plugin/agenda/js/main.js"></script> <!-- Resource jQuery -->
+    
+    
+     <script type="text/javascript" src="web/plugin/blog/js/modernizr.js"></script>
+      <script type="text/javascript" src="web/plugin/blog/js/responsee.js"></script>     
     
 
-	{%if page.sous_titre!="Blog" and page.sous_titre!='Book' and page.sous_titre!='Videos'%}
+	{%if page.sous_titre!="Blog" and page.sous_titre!='Book' and page.sous_titre!='Videos' and page.sous_titre!='Agenda'%}
     <script type="text/javascript" src="web/js/script-video.js"></script> <!--pour ne pas afficher la video en bg-->
     {% endif %}
 	
@@ -63,7 +69,7 @@
     <script type="text/javascript" src="web/js/supersized.3.2.7.min.js"></script>
     <script type="text/javascript" src="web/js/supersized.shutter.js"></script>
     <script type='text/javascript' src='web/js/script-snb.js'></script>
-    {%if page.sous_titre!="Blog" and page.sous_titre!='Book' and page.sous_titre!='Videos' %}
+    {%if page.sous_titre!="Blog" and page.sous_titre!='Book' and page.sous_titre!='Videos' and page.sous_titre!='Agenda'%}
     <script type="text/javascript" src="web/js/script.js"></script> <!--pour ne pas afficher les photos en bg-->
     {% endif %}
 	{% endif %}

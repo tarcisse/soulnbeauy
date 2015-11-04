@@ -127,6 +127,22 @@ $app->get('/', function(Application $app , Request $req) {
     
     return $app['twig']->render('web/pages/blog.html',array('page'=>$page));
 });
+
+/*
+  *Agenda
+  *
+  */
+ $app->get('/event', function(Application $app, Request $req) {
+    global $page;
+	$page["article"] = "accueil";
+	
+    $page['titre']='EVENT | Soul & Beauty';
+	$page['sous_titre']='Agenda';
+    $page['description']='';
+    $page['key']='';
+    
+    return $app['twig']->render('web/pages/agenda.html',array('page'=>$page));
+});
  
 // On lance l'application
 $app->run();

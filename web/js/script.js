@@ -38,6 +38,7 @@ $(document).ready(function () {
 
 //toggle menu
 $('.menu-btn').on('click',function(){
+	window.alert("ok");
     $('.navigation').collapse({
 toggle: false
 });

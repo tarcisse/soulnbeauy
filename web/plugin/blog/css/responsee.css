@@ -61,6 +61,7 @@ td {border-right:1px solid #e0e0e0;}
   max-width:100%;
   overflow:hidden;
   /*padding:0 0.625em;*/
+  background:white;
 }
 .size-960.align-content-left .line,.size-1140.align-content-left .line {margin-left:0;}
 form {line-height:1.4em;}
@@ -328,8 +329,9 @@ nav {
 .top-nav li ul li a {border-top:1px solid #878787;}
 .top-nav li ul li ul li a {border-top:1px solid #989898;}
 .top-nav li a:hover {
-  background:none repeat scroll 0 0 #8b8b8b;
-  color:#fff;
+  background-color: white !important;
+  color:black !important;
+  letter-spacing: 5px;
 }
 .top-nav li ul,.top-nav li ul li ul {
   display:block;  

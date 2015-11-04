@@ -11,6 +11,10 @@
 	        box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+#vid1 : hover{
+	background-color:#F00;
+}
+
 #plugin-video{
 	padding-bottom:40px;
 }
@@ -98,7 +102,7 @@ a.button:hover {
 	height: 100%;
 	//padding: 1.5em;	
 	color: #3c4a50;
-	background: #fff;
+	background: fidf;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	backface-visibility: hidden;
@@ -201,6 +205,7 @@ a.button:hover {
 /* BLUE */
 .grid figure figcaption.blue {
 	background-color: #50758b;
+	opacity:0.5;
 }
 .grid figure figcaption.blue p,
 .grid figure figcaption.gray p,
@@ -224,6 +229,7 @@ a.button:hover {
 /* GRAY */
 .grid figure figcaption.gray {
 	background-color: #a3aaad;
+	opacity: .5;
 }
 	figure.effect-slideup figcaption.gray::after {
 		border-bottom-color: #a3aaad;

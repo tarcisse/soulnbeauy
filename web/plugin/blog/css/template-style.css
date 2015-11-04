@@ -30,7 +30,7 @@ header h1 {
 	top: -0.35em;
 	letter-spacing: 5px;
 }
-#nav-container{
+.nav-container{
 	height:70px;
 	background: white;
 	color:#000;
@@ -76,11 +76,11 @@ section p {
 	opacity: 0.5;
 }
 #home-section .post-text {
-	color: #fff;
+	color: #000;
 	padding: 2.25em;
 }
 #home-section .post-text h2 {
-	color: #fff;
+	color: #000;
 	font-size: 3.2em;
 	font-weight: 100;
 	line-height: 1em;
@@ -156,7 +156,7 @@ aside h3 {
 	margin: 0 0 0.625em;
 }
 aside p {
-	color: #637693;
+	color: #000	;
 	font-size: 0.85em;
 }
 .advertising {
@@ -285,6 +285,7 @@ address p {
 	line-height: 2.5em;
 }
 @media screen and (max-width: 800px) {
+	
   a.logo {
   	display: block;
   	text-align: center;
@@ -303,15 +304,77 @@ address p {
   	line-height: 1em;
   	padding-top: 1em;
   	text-align: center;
+	z-index:999;
+  }
+  .nav-container{
+	  position:relative;
+	  height: 100%;
+	  display:none;
   }
   .top-nav ul {
   	float: none;
   	text-align: center;
+	
   }
   .top-nav li a {
-  	background: none repeat scroll 0 0 #162b4d;
-  	border-top: 1px solid #0b192f;
-  	color: #fff;
+  	background: none repeat scroll 0 0 #FFF;
+  	border-top: 1px solid #dedede;
+  	color: #000;
+  	display: block;
+  }
+  .social.right {
+  	float: none;
+  	text-align: center;
+  }
+  #article-section .post-text {
+  	padding: 1em 2em 2em;
+  }
+  .right-align .post-text {
+  	text-align: left;
+  }
+  .right-align .post-date {
+  	text-align: center;
+  }
+  footer a.right {
+  	float: none;
+  	text-align: center;
+  }
+  footer {
+  	text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+	
+  a.logo {
+  	display: block;
+  	text-align: left;
+  }
+  head h1 {
+  	display: block;
+  	text-align: center;
+  }
+  header h1 {
+  	display: block;
+  	text-align: center;
+  	top: -1.5em;
+  }
+  .nav-text {
+  	font-size: 2.5em;
+  	line-height: 1em;
+  	padding-top: 1em;
+  	text-align: center;
+	z-index:999;
+  }
+  .top-nav ul {
+  	float: none;
+  	text-align: center;
+	
+  }
+  .top-nav li a {
+  	background: none repeat scroll 0 0 #FFF;
+  	border-top: 1px solid #dedede;
+  	color: #000;
   	display: block;
   }
   .social.right {

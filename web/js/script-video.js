@@ -7,13 +7,18 @@ $(document).ready(function () {
 });
 
 //toggle menu
+var i=false;
 $('.menu-btn').on('click',function(){
+	i=true;
     $('.navigation').collapse({
 toggle: false
 });
+	
 })
 $('body').on('click',function(){
+	if(i==true){
     $('.navigation').collapse('hide');
+	}
 })
 
 

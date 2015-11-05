@@ -1100,7 +1100,7 @@ figure {
   margin: 0;
 }
 img {
-  float: right;
+  /*float: right;*/
 }
 .img-responsive,
 .thumbnail > img,

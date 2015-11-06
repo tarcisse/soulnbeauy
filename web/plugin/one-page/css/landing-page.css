@@ -92,7 +92,7 @@ body,
 }
 
 .content-section-b {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     /*border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;*/
 }
@@ -101,6 +101,7 @@ body,
     margin-top: 100px;
 	margin-bottom: 50px;
 	letter-spacing: 20px;
+	text-transform:uppercase !important;
 }
 .section-heading h2{
 	font-size: 6em;

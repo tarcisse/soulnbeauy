@@ -84,6 +84,21 @@ header-timeline h1 {
   position: relative;
   margin: 2em 0;
 }
+.cd-timeline-block span img{
+	width: 48.5%;
+    top: 5em;
+	padding-bottom:50px;
+}
+.float-right{
+	padding-right: 2.6em;
+    padding-left: 4.4em;
+	float: right;
+}
+.float-left{
+	float: left;
+	padding-left: 2.6em;
+    padding-right: 4.4em;
+}
 .cd-timeline-block:after {
   content: "";
   display: table;
@@ -118,11 +133,11 @@ header-timeline h1 {
 }
 .cd-timeline-img img {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: relative;
-  left: 50%;
-  top: 50%;
+  left: 61%;
+  top: 61%;
   margin-left: -12px;
   margin-top: -12px;
 }
@@ -137,11 +152,10 @@ header-timeline h1 {
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 60px;
-    height: 60px;
-    left: 50%;
+    width: 40px;
+    height: 40px;
+    left: 50.9%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
@@ -267,16 +281,18 @@ header-timeline h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
+	letter-spacing: 10px;
+	margin-top: 0 !important;
+	text-transform: uppercase;
   }
   .cd-timeline-content p {
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 1.275rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -297,10 +313,11 @@ header-timeline h1 {
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
-    left: 122%;
-    top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    left: 127.5%;
+    top: 0px;
+    font-size: 2.25rem;
+	text-transform:uppercase;
+	letter-spacing:10px;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
@@ -313,11 +330,12 @@ header-timeline h1 {
     border-right-color: white;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-    float: right;
+    /*float: right;
+	padding-right:0 !important;*/
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 125.8%;
     text-align: right;
   }
   .cssanimations .cd-timeline-content.is-hidden {
@@ -455,7 +473,21 @@ header-timeline h1 {
 }
 
 @media only screen and (max-width: 1169px) {
-  .cd-timeline-block {
-  	background-image:none !important;
+  .cd-timeline-block span img{
+  	display:none;
    }
 }
+
+@media only screen and (max-width: 750px) {
+  h2{
+  	 font-size:2em !important;
+   }
+   
+   .cd-timeline-content .cd-date {
+   	 font-size:1em;
+	float: left;
+    padding-top: .4em;
+    opacity: .7;
+	}
+}
+

@@ -47,9 +47,24 @@ body {
 	cursor: inherit;
 }
 /***********Slider*************/
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
+.banner { 
+	width: 100%;
+	height: 100%;
+	position: relative; 
+	overflow: auto; 
+	background: red;
+}
+.banner li { 
+	list-style: none; 
+}
+.banner ul li { 
+	float: left; 
+}
+.ambition li{
+	background:url(web/images/about/ambition.png) !important;
+	background:green;
+	background-repeat:no-repeat;
+}
 a {
 	color: #aaa;
 	transition: ease .3s;

@@ -160,6 +160,22 @@ $app->get('/', function(Application $app , Request $req) {
     return $app['twig']->render('web/pages/agency.html',array('page'=>$page));
 });
  
+ 
+ /*
+  *Detail album
+  *
+  */
+ $app->get('/{album}', function(Application $app, Request $req, $album) {
+    global $page;
+	$page["article"] = "accueil";
+        $page['titre']=$album;
+	$page['sous_titre']='Agency';
+        $page['description']='';
+        $page['key']='';
+    
+    return $app['twig']->render('web/pages/album.html',array('page'=>$page));
+});
+ 
 // On lance l'application
 $app->run();
 

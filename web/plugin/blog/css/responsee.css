@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   margin:0.2em 0 0.2em 0;    
 }
 h1 {font-size:2.4em;}
-h2 {font-size:5em;}  
+h2 {font-size:2.25em;}  
 h3 {font-size:1.6em;}  
 h4 {font-size:1.2em;}  
 h5 {font-size:1em;}  
@@ -289,7 +289,6 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .right {float:left;} 
 @media screen and (max-width:800px) {
 h2 {
-	font-size:5em !important;
 	text-align:center;
 }
 img {
@@ -297,7 +296,7 @@ img {
     height: auto;
 	float:none !important;
 	margin:auto;
-	display:none !important;
+	/*display:none !important;*/
 }
 .size-960 {max-width:800px;}
 .size-1140 {max-width:800px;}
@@ -451,9 +450,6 @@ h2 {
 @media screen and (max-width:1000px) {
 h2 {
 	text-align:left !important;
-}
-img {
-	display:none !important;
 }
 .col-sm-6 {
     left:100%;

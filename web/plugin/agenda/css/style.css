@@ -476,18 +476,27 @@ header-timeline h1 {
   .cd-timeline-block span img{
   	display:none;
    }
+   
+   .cd-timeline-content .cd-date {
+	font-size:1.5em;
+	float: left;
+	padding-top: .4em;
+	opacity: .7;
+}
+
 }
 
 @media only screen and (max-width: 750px) {
-  h2{
-  	 font-size:2em !important;
-   }
+.cd-timeline-content h2 {
+	font-size:2em !important;
+	letter-spacing: 10px;
+	text-align:left !important;
+	text-transform: uppercase;
+}
    
-   .cd-timeline-content .cd-date {
-   	 font-size:1em;
-	float: left;
-    padding-top: .4em;
-    opacity: .7;
-	}
+.cd-timeline-content .cd-read-more {
+	padding: .8em 1em;
+	margin-top: 1.2em;
+}
 }
 

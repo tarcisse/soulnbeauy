@@ -6445,11 +6445,12 @@ button.close {
 @media screen and (max-width:750px) {
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
    display:none;
+   
 }
 }
 @media screen and (max-width:1000px) {
 h2 {
-	font-size:4em !important;
+	letter-spacing: 10px;
 	text-align:center;
 }
 }

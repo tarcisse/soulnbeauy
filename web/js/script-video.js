@@ -6,8 +6,13 @@ $(document).ready(function () {
     });
 	
 });
-//background opacity when scrolling
 
+//AGENCY slider 
+$(function() {
+    $('.banner').unslider();
+});
+
+//background opacity when scrolling
 $(window).scroll(function() {
 	if($(window).scrollTop() > 200){
     // Get scroll position

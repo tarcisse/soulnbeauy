@@ -46,6 +46,10 @@ body {
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	cursor: inherit;
 }
+/***********Slider*************/
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
 a {
 	color: #aaa;
 	transition: ease .3s;

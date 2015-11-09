@@ -22,9 +22,7 @@
     <body>
         <div class="albumbar">
             <span>
-                <a href="http://www.flickr.com/photos/2dogs_productions/sets/72157594522520053/" target="_blank">
-                    Select album
-                </a>
+                    Select
             </span>
             <div id="albumSelect" class="albumSelect">
                 <ul>

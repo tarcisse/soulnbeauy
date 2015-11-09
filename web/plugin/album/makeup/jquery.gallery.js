@@ -174,11 +174,16 @@ $(function() {
     the image source is in the thumb's alt attribute
     */
     function loadPhoto($thumb,cursorClass){
-        current		= $thumb.index()+1;
+	
+        current	= $thumb.index()+1;
         $('#imageWrapper').empty();
         $('#loading').show();
         $('<img id="displayed" title="'+$thumb.attr('title')+'" class="'+cursorClass+'" style="display:none;"/>').load(function(){
             var $this = $(this);
+	    //alert($thumb.attr('alt'));
+	    //$('#imageWrapper').css('background','red');
+	    //$('#imageWrapper').css('background-image','url('+$thumb.attr('alt')+')');
+	    $('body').css('background-image','url('+$thumb.attr('alt')+')');
             $('#loading').hide();
             resize($this,0);
             if(!$('#imageWrapper').find('img').length){

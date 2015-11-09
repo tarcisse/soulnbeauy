@@ -6,6 +6,8 @@ body{
     overflow:hidden;
     background-color:#FFFFFF;
 	margin:0;
+                background-size: 100%;
+        background-repeat: no-repeat;
 }
 .albumbar{
     height:24px;
@@ -76,7 +78,7 @@ span#description, .albumbar span{
     position:relative;
     padding-top:30px;
     text-align:center;
-	background-color:#FFF;
+	background-color: transparent;
 }
 #imageWrapper img{
     margin:0 auto;

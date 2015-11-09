@@ -23,7 +23,7 @@
         <div class="albumbar">
             <span>
                 <a href="http://www.flickr.com/photos/2dogs_productions/sets/72157594522520053/" target="_blank">
-                    MAke UP
+                    Select album
                 </a>
             </span>
             <div id="albumSelect" class="albumSelect">
@@ -60,9 +60,9 @@
         </div>
         <div class="infobar">
             <span id="description"></span>
-            <span class="reference">
+            <!--<span class="reference">
                 <a href="http://tympanus.net/codrops/2010/05/23/fresh-sliding-thumbnails-gallery-with-jquery-php">Soulnbeauty</a>
-            </span>
+            </span>-->
         </div>
         <!-- The JavaScript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

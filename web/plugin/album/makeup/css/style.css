@@ -1,27 +1,20 @@
-*{
-    margin:0;
-    padding:0;
-}
 body{
     font-family:Verdana;
     text-transform:uppercase;
     color:#fff;
     font-size:10px;
     overflow:hidden;
-    background-color:#f9f9f9;
+    background-color:#FFFFFF;
+	margin:0;
 }
 .albumbar{
     height:24px;
     line-height:24px;
-    text-align:center;
+    text-align:left;
     position:fixed;
-    background-color:#000;
-    left:0px;
+    left:20px;
     width:100%;
     top:0px;
-    -moz-box-shadow:-2px 0px 4px #333;
-    -webkit-box-shadow:-2px 0px 4px #333;
-    box-shadow:-2px 0px 4px #333;
     z-index:11;
 }
 .infobar{
@@ -33,13 +26,11 @@ body{
     left:0px;
     width:100%;
     bottom:0px;
-    -moz-box-shadow:0px -1px 2px #000;
-    -webkit-box-shadow:0px -1px 2px #000;
-    box-shadow:0px -1px 2px #000;
 }
 span#description, .albumbar span{
     text-shadow:0px 0px 1px #fff;
     color:#fff;
+	background-color:#fff;
 }
 .albumbar span a{
     color:#aaa;
@@ -85,6 +76,7 @@ span#description, .albumbar span{
     position:relative;
     padding-top:30px;
     text-align:center;
+	background-color:#FFF;
 }
 #imageWrapper img{
     margin:0 auto;
@@ -108,15 +100,14 @@ span#description, .albumbar span{
     height:18px;
     line-height:18px;
     position:absolute;
-    right:5px;
-    top:2px;
+    left:80px;
     width:120px;
+	top:3.4px;
 }
 .albumSelect .title{
-    color:#f0f0f0;
+    color:#000;
     z-index:10;
-    border:1px solid #444;
-    background-color:#555;
+    background-color:#FFF;
     background-repeat:no-repeat;
     background-position:90% 50%;
     cursor:pointer;
@@ -138,18 +129,14 @@ span#description, .albumbar span{
     display:none;
     padding:0px;
     width:100%;
-    border:1px solid #444;
-    background-color:#555;
+    background-color:#FFF;
     margin:22px 0px 0px 0px;
-    -moz-box-shadow:0px 0px 2px #000;
-    -webkit-box-shadow:0px 0px 2px #000;
-    box-shadow:0px 0px 2px #000;
 }
 .albumSelect ul li a{
     text-decoration:none;
     cursor:pointer;
     display:block;
-    padding:3px 0px;
+    padding:10px;
     color:#ccc;
 }
 .albumSelect ul li a:hover{

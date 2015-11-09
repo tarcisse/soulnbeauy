@@ -167,9 +167,9 @@ $app->get('/', function(Application $app , Request $req) {
   */
  $app->get('/{album}', function(Application $app, Request $req, $album) {
     global $page;
-	$page["article"] = "accueil";
+	$page["article"] = "{album}";
         $page['titre']=$album;
-	$page['sous_titre']='Agency';
+	$page['sous_titre']='Album';
         $page['description']='';
         $page['key']='';
     

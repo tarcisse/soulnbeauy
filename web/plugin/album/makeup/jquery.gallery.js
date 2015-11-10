@@ -146,7 +146,7 @@ $(function() {
                             var $first = $(this);
 			    
                             $('#loading').hide();
-			     $('#imageWrapper_bg').css('background-image','url('+data[i].src+')');
+			   //  $('#imageWrapper_bg').css('background-image','url('+data[i].src+')');
                             resize($first,0);
                             $('#imageWrapper').append($first);
                             $('#description').html($this.attr('title'));

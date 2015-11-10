@@ -1096,6 +1096,9 @@ input:focus, textarea:focus {
 }
 }
 @media (min-width:768px) and (max-width:979px) {
+iframe {
+	height:80vh;
+}
 .title-caption h4:before {
 	margin-left: -10px;
 }
@@ -1148,6 +1151,12 @@ input:focus, textarea:focus {
 }
 }
 @media (max-width: 767px) {
+.logo {
+	text-align:center;
+}
+iframe {
+	height:70vh;
+}
 .navigation {
 	transition: ease .3s;
 	-webkit-transition: ease .3s;
@@ -1233,6 +1242,9 @@ input:focus, textarea:focus {
 .cat-icon {
 	right: 50%;
 }
+iframe {
+	height:60vh;
+}
 }
 
 @media (max-width:480px) {
@@ -1295,4 +1307,9 @@ input:focus, textarea:focus {
 	line-height: 20px;
 }
 
+}
+
+@media (min-width:800px) {
+iframe {
+	height:100vh;
 }

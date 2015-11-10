@@ -185,7 +185,6 @@ span#description, .albumbar span{
     color:#fff;
 }
 @media (max-width:800px) {
-
 .albumbar span{
 	display:none;
 }
@@ -210,4 +209,9 @@ span#description, .albumbar span{
     background-color:#FFF;
     margin:27px 0px 0px 0px;
 }
+}
+
+@media (max-width:500px) {
+#imageWrapper_bg{
+	display	: none;
 }

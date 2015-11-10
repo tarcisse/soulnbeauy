@@ -48,7 +48,38 @@ jQuery(document).ready(function($) {
 			$('.nav-container').slideUp();
 			submenu = 0; 
 		}
+  });
+  
+  $('#hamburger').click(function() { 
+   		if(submenu == 0){
+    		$('.nav-container').slideDown();
+			submenu = 1;
+		}else{
+			$('.nav-container').slideUp();
+			submenu = 0; 
+		}
   }); 
+  
+  (function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+  
   //Custom forms
   $(function() {
     var input = document.createElement("input");

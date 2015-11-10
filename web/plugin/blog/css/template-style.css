@@ -9,7 +9,7 @@ nav {
 	background: none repeat scroll 0 0 #000;
 	position: relative;
 }
-a.logo {
+.logo {
 	color: #fff !important;
 	display: inline-block;
 	font-size: 2.3em;
@@ -18,7 +18,10 @@ a.logo {
 	padding: 0.6em;
 	text-decoration:none !important;
 }
-a.logo span {
+.logo a{
+	color:white;
+}
+.logo span {
 	color: #FFF;
 }
 header h1 {
@@ -35,7 +38,114 @@ header h1 {
 	height:70px;
 	background: white;
 	color:#000;
+	display:none;
 }
+.nav-container2{
+	height:70px;
+	background: white;
+	color:#000;
+	display:none;
+}
+.c-hamburger {
+  display: block;
+  position: absolute;
+  right:0;
+  z-index:9999;
+  top:0px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 85px;
+  height: 75px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+/**3 bars**/
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -20px;
+}
+
+.c-hamburger span::after {
+  bottom: -20px;
+}
+/*animate to X*/
+.c-hamburger--htx {
+  background-color: #000000;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #000000;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
 .top-nav li a {
 	font-size: 1.1em;
 	color:#000;
@@ -376,7 +486,6 @@ address p {
   }
   .top-nav li a {
   	background: none repeat scroll 0 0 #FFF;
-  	border-top: 1px solid #dedede;
   	color: #000;
   	display: block;
   }
@@ -400,4 +509,9 @@ address p {
   footer {
   	text-align: center;
   }
+}
+@media screen and (max-width: 800px) {
+	#hamburger{
+		display:none;
+	}
 }

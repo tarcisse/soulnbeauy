@@ -20,6 +20,11 @@
 
     </style>
     <body>
+    	<!--nav--->
+
+
+        <div id="imageWrapper_bg">
+        </div>
         <div class="albumbar">
             <!--<span>
                     Select

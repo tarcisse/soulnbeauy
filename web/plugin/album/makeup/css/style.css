@@ -1,14 +1,10 @@
 @-webkit-keyframes pulse {
 	from {
-   background-size: 105%;
+   background-size: 110%;
 	}
 	50% {
 	
-   background-size: 110%;
-	}
-	to {
-	
-  background-size: 100%;
+  background-size: 120%;
 	}
 }
 
@@ -18,15 +14,34 @@ body{
     color:#fff;
     font-size:10px;
     overflow:hidden;
-      background-size: 105%;
+    margin: 0px;
+     
+}
+
+/**********NAV**********/
+
+
+
+
+#imageWrapper_bg{
+     position:absolute;
+ 	 margin: -50px;
+     width: 110%;
+     height: 110vh;
+     background-size: 110%;
 	-webkit-animation-name: pulse;
-	-webkit-animation-duration: 35s;
+	-webkit-animation-duration:30s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: ease-in-out;
 	transition-property: all;
-	transition-duration: .5s;
+	transition-duration: 0.5s;
 	overflow: hidden;
-        background-repeat: no-repeat;
+	background-repeat: no-repeat;
+    -webkit-filter: blur(20px);
+  	-moz-filter: blur(20px);
+  	-o-filter: blur(20px);
+  	-ms-filter: blur(20px);
+  	filter: blur(20px);
 }
 .albumbar{
     height:14px;
@@ -93,6 +108,7 @@ span#description, .albumbar span{
     opacity:0.4;
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
 }
+
 #imageWrapper{
     position:relative;
     padding-top:30px;

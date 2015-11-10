@@ -142,7 +142,9 @@ $(function() {
                         /* load 1 image into container*/
                         $('<img id="displayed" style="display:block;" class="cursorPlus"/>').load(function(){
                             var $first = $(this);
+			    
                             $('#loading').hide();
+			     $('#imageWrapper_bg').css('background-image','url('+data[i].src+')');
                             resize($first,0);
                             $('#imageWrapper').append($first);
                             $('#description').html($this.attr('title'));
@@ -183,7 +185,7 @@ $(function() {
 	    //alert($thumb.attr('alt'));
 	    //$('#imageWrapper').css('background','red');
 	    //$('#imageWrapper').css('background-image','url('+$thumb.attr('alt')+')');
-	    $('body').css('background-image','url('+$thumb.attr('alt')+')');
+	    $('#imageWrapper_bg').css('background-image','url('+$thumb.attr('alt')+')');
             $('#loading').hide();
             resize($this,0);
             if(!$('#imageWrapper').find('img').length){

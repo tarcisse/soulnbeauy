@@ -20,6 +20,8 @@
 
     </style>
     <body>
+        <div id="imageWrapper_bg">
+        </div>
         <div class="albumbar">
             <span>
                 <a href="http://www.flickr.com/photos/2dogs_productions/sets/72157594522520053/" target="_blank">

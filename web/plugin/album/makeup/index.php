@@ -21,9 +21,9 @@
     </style>
     <body>
         <div class="albumbar">
-            <span>
+            <!--<span>
                     Select
-            </span>
+            </span>-->
             <div id="albumSelect" class="albumSelect">
                 <ul>
                     <?php

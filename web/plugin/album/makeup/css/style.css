@@ -24,12 +24,12 @@ body{
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: ease-in-out;
 	transition-property: all;
-	transition-duration: 1s;
+	transition-duration: .5s;
 	overflow: hidden;
         background-repeat: no-repeat;
 }
 .albumbar{
-    height:24px;
+    height:14px;
     line-height:24px;
     text-align:left;
     position:fixed;
@@ -118,19 +118,17 @@ span#description, .albumbar span{
     cursor:url("../icons/minus.cur"),url("icons/minus.cur"), default;
 }
 .albumSelect{
-    height:18px;
     line-height:18px;
     position:absolute;
-    left:60px;
-    width:120px;
-	top:3.4px;
-	border-radius: 5px;
-	opacity:.4;
+    left:0px;
+    width:160px;
+	top:10px;
 }
 .albumSelect .title{
-    color:#000;
+	height:28px;
+    color:#fff;
     z-index:10;
-    background-color:#FFF;
+    background-color:#000;
     background-repeat:no-repeat;
     background-position:90% 50%;
     cursor:pointer;
@@ -138,8 +136,12 @@ span#description, .albumbar span{
     text-indent:10px;
     width:100%;   
     position:absolute;
-    top:0px;
+    top:2px;
+	padding-top:12px;
+	font-size:16px;
     left:0px;
+	border-radius: 5px;
+	opacity:.4;
 }
 .down{
     background-image:url(../icons/down.png);
@@ -153,7 +155,7 @@ span#description, .albumbar span{
     padding:0px;
     width:100%;
     background-color:#FFF;
-    margin:22px 0px 0px 0px;
+    margin:47px 0px 0px 0px;
 }
 .albumSelect ul li a{
     text-decoration:none;
@@ -178,5 +180,18 @@ span#description, .albumbar span{
     left:28%;
     width:30%;
 	top:3.4px;
+}
+.albumSelect .title{
+	height:18px;
+	padding-top:2px;
+	font-size:11px;
+}
+.albumSelect ul {
+    list-style:none;
+    display:none;
+    padding:0px;
+    width:100%;
+    background-color:#FFF;
+    margin:27px 0px 0px 0px;
 }
 }

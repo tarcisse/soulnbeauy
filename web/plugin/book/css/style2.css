@@ -48,7 +48,7 @@
 		margin:auto;
 	}
 	.hs-titles{
-		width: 100% !important;
+		width: 90% !important;
 		font-size:10px !important;
 		margin:auto;
 	}
@@ -61,6 +61,24 @@
 	}
 	h2{
 		text-align:center !important;
+	}
+	
+	.hs-overlay span{
+		width: 90% !important;
+		margin-right:10px !important;
+		font-size:10px !important;
+		margin:auto;
+	}
+	
+	.hs-titles span{
+		width: 90% !important;
+		font-size:10px !important;
+		margin:auto;
+	}
+	.hs-titles{
+		width: 100% !important;
+		font-size:10px !important;
+		margin:auto;
 	}
 
 }
